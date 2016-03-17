@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('app', ['ui.router', 'navController', 'ngAnimate', 'ui.bootstrap', 'ngResource', 'app.controllers', 'app.services'])
+	var app = angular.module('app', ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngResource', 'app.controllers', 'app.services'])
 
 	// define for requirejs loaded modules
 	define('app', [], function() { return app; });
@@ -37,16 +37,8 @@
 		$urlRouterProvider.otherwise("/")
 
 		$stateProvider
-			// you can set this to no template if you just want to use the html in the page
-			.state('home', {
-				url: "/",
-				templateUrl: viewsPrefix + "home.html",
-				data: {
-					pageTitle: 'Home'
-				}
-			})
 			.state('shipwrecks',{
-	        url:'/shipwrecks',
+	        url:'/',
 	        templateUrl: viewsPrefix + 'shipwrecks.html',
 	        controller:'ShipwreckListController'
 	    }).state('viewShipwreck',{
