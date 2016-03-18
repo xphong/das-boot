@@ -5,4 +5,4 @@ Spring Boot v1.3.1.RELEASE
 * Spring Data JPA
 * H2 Embedded Database
 * Flyway DB
-* Mockito/Hamcrest
+* Junit/Mockito/Hamcrest
